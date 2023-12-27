@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Styles/phishingpage.css">
+</head>
+<body>
+    <header class="header">
+        <i class='bx bx-menu'></i>
+        <div class="user">
+            <p class="user-name-text">Canberk Ekinci</p>
+            <p class="admin-text">Admin</p>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="link" onclick="window.location.href = 'index.html'">
+            <p>Home</p>
+        </div>
+        <div class="link" onclick="window.location.href = 'phishingpage.html'">
+            <p>Phishing Page</p>
+        </div>
+        <div class="link" onclick="window.location.href = 'templates.html'">
+            <p>Templates</p>
+        </div>
+        <div class="link" onclick="window.location.href = 'reportpage.html'">
+            <p>Report Page</p>
+        </div>
+
+    </nav>
+    <main>
+        <div class="upper-part">
+            <div class="send-form">
+                <form class="upper-part-form">
+                    <div>
+                        <label for="mails">Send From:</label>
+                        <select name="mails" id="mails" class="selector">
+                          <option value="mail1">Mail1</option>
+                          <option value="mail2">Mail2</option>
+                          <option value="mail3">Mail3</option>
+                          <option value="mail4">Mail4</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Choose Your Mail" class="upper-part-input-button">
+                  </form>
+            </div>
+            <div class="send-form">
+                <form class="upper-part-form">
+                    <div>
+                        <label for="mails">Send To:</label>
+                        <select name="mails" id="mails" class="selector">
+                          <option value="mail1">Mail1</option>
+                          <option value="mail2">Mail2</option>
+                          <option value="mail3">Mail3</option>
+                          <option value="mail4">Mail4</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Choose Target Mail" class="upper-part-input-button">
+                  </form>
+            </div>
+        </div>
+        <div class="lower-part">
+            <div class="lower-part-buttons">
+                <form class="lower-part-form">
+                    <div>
+                        <label for="templates">Choose Template:</label>
+                        <select name="templates" id="templates" class="selector">
+                          <option value="mail1">Template1</option>
+                          <option value="mail2">Template2</option>
+                          <option value="mail3">Template3</option>
+                          <option value="mail4">Template4</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Send The Mail" class="lower-part-input-button">
+                  </form>
+            </div>
+            <div class="lower-part-content"></div>
+        </div>
+    </main>
+</body>
+</html>
